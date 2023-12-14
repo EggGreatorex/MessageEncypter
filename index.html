@@ -7,14 +7,17 @@
   <title>Message Encypter</title>
 </head>
 <body>
+
+  <button class="startButton" onclick="readInput();"></button>
+
   <div class="inputBox">
-    <textarea placeholder="Enter text here..."></textarea>
+    <textarea placeholder="Enter text here..." class="userText"></textarea>
   </div>
 
   <div>
     <span class="Enclabel">Encrypt</span>
     <label class="switch">
-    <input type="checkbox">
+    <input type="checkbox" class="toggleButton">
     <span class="slider round"></span>
     </label>
     <span class="Declabel">Decrypt</span>
@@ -22,7 +25,9 @@
   
 
   <div class="outputBox">
-    <p class="outputMessage"></p>
+    <textarea class="outputText" readonly></textarea>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
